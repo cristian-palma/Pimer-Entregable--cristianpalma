@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce - Contacto</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/app.css">
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1 class="nombre-sitio">Tienda<span> Muebles</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="Index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="Blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    
+
+    
+    <main class="contenido-principal contenedor">  
+           <h2 class="text-center">Contactenos</h2> 
+
+           <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                    <div class="campo">
+                        <label for="Nombre">Nombre</label>
+                        <input  id="Nombre" type="text" placeholder="Tu nombre aqui" required>
+                    </div>
+                    <div class="campo">
+                        <label for="Asunto">Asunto</label>
+                        <input  id="Asunto" type="text" placeholder="Tu Asunto aqui" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="Email">E-mail</label>
+                        <input id="Email" type="email" placeholder="Tu Email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="tel">Telefono</label>
+                        <input  id="tel" type="tel" placeholder="Tu Numero Telefonico" required>
+                    </div>
+  
+
+                    <div class="campo">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea rows="10" cols="20"></textarea>
+                    </div>
+            </fieldset>
+
+
+            <fieldset>
+                <Legend>pais</Legend>
+
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select id="Pais">
+                        <option disabled>---Seleccione---</option>
+                        <option> Mexico</option>
+                        <option  value="CO"selected> Colombia</option>
+                        <option value="HO"> Honduras</option>
+                        <option value="PR"> Peru</option>
+                        <option value="AR"> Argentina </option>
+                        <option value="CH"> Chile</option>
+                        <option value="EC"> Ecuador</option>
+                        <option value="BR"> Brasil</option>
+                        <option value="VZ"> Venezuela</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <Legend>Informacion Extra</Legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label> 
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+
+                    <label for="categorias">Categorias de interes</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Oficina">
+                        <option value="Exteriores">
+                        <option value="Baños">
+                        <option value="Dormitorios">     
+                        
+                    </datalist>
+                </div>
+
+            </fieldset>
+            
+
+            <input class="btn" type="submit" value="Enviar Formulario">
+
+            
+           </form>
+
+
+
+
+            
+    </main>
+    
+    
+
+    <footer class="site-footer">
+
+        <div class="grid-footer contenedor">
+            <div>
+                <H3>Categorias</H3>
+                    <nav class="footer-nav">
+                         <a href="#">Cocina</a>
+                         <a href="#">Oficina</a>
+                         <a href="#">Jardin</a>
+                         <a href="#">Cochera</a>               
+                         <a href="#">Dormitorios</a>               
+                    </nav>
+            </div>
+            
+
+            <div>
+                <H3>Sobre Nosotros</H3>
+                    <nav class="footer-nav">
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">Mision, Vision y Valores</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Politica de Privacidad</a>               
+                        <a href="#">Terminos del Servicio</a>               
+                    </nav>
+            </div>
+
+            <div>
+                <H3>Soporte</H3>
+                    <nav class="footer-nav">
+                        <a href="#">Preguntas frecuentes</a>
+                        <a href="#">Ayuda en Linea</a>
+                        <a href="#">Confianza y Seguridad</a>                              
+                    </nav>
+            </div>
+         
+        </div>
+        
+                
+        <p class="copyright">Todos los Derechos Reservados. TiendaMuebles.</p>
+    
+    </footer>
+
+</body>
+
+</html>    
